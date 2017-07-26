@@ -1,4 +1,4 @@
-/*  Copyright 2012-2016 Sven "underscorediscovery" Bergström
+/*  Copyright 2012-2016 Sven "underscorediscovery" BergstrÃ¶m
     
     written by : http://underscorediscovery.ca
     written for : http://buildnewgames.com/real-time-multiplayer/
@@ -13,7 +13,7 @@
     // http://paulirish.com/2011/requestanimationframe-for-smart-animating/
     // http://my.opera.com/emoller/blog/2011/12/20/requestanimationframe-for-smart-er-animating
 
-    // requestAnimationFrame polyfill by Erik Möller
+    // requestAnimationFrame polyfill by Erik MÃ¶ller
     // fixes from Paul Irish and Tino Zijdel
 
 var frame_time = 60/1000; // run the local game at 16ms/ 60hz
@@ -170,8 +170,10 @@ if( 'undefined' != typeof global ) {
 
 /*
     Helper functions for the game code
+
         Here we have some common maths and game related code to make working with 2d vectors easy,
         as well as some helpers for rounding numbers to fixed point.
+
 */
 
     // (4.22208334636).fixed(n) will return fixed point value to n places, default n = 3
@@ -193,6 +195,7 @@ game_core.prototype.v_lerp = function(v,tv,t) { return { x: this.lerp(v.x, tv.x,
 
 /*
     The player class
+
         A simple class to maintain state of a player on screen,
         as well as to draw that state when required.
 */
@@ -253,11 +256,13 @@ game_core.prototype.v_lerp = function(v,tv,t) { return { x: this.lerp(v.x, tv.x,
     }; //game_player.draw
 
 /*
+
  Common functions
  
     These functions are shared between client and server, and are generic
     for the game state. The client functions are client_* and server functions
     are server_* so these have no prefix.
+
 */
 
     //Main update loop
@@ -385,10 +390,12 @@ game_core.prototype.update_physics = function() {
 }; //game_core.prototype.update_physics
 
 /*
+
  Server side functions
  
     These functions below are specific to the server side only,
     and usually start with server_* to make things clearer.
+
 */
 
     //Updated at 15ms , simulates the world state
@@ -456,9 +463,12 @@ game_core.prototype.handle_server_input = function(client, input, input_time, in
 
 
 /*
+
  Client side functions
+
     These functions below are specific to the client side only,
     and usually start with client_* to make things clearer.
+
 */
 
 game_core.prototype.client_handle_input = function(){
