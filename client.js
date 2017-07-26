@@ -1,4 +1,4 @@
-/*  Copyright 2012-2016 Sven "underscorediscovery" Bergström
+/*  Copyright 2012-2016 Sven "underscorediscovery" BergstrÃ¶m
     
     written by : http://underscorediscovery.ca
     written for : http://buildnewgames.com/real-time-multiplayer/
