@@ -1,4 +1,4 @@
-/*  Copyright 2012-2016 Sven "underscorediscovery" Bergström
+/*  Copyright 2012-2016 Sven "underscorediscovery" BergstrÃ¶m
     
     written by : http://underscorediscovery.ca
     written for : http://buildnewgames.com/real-time-multiplayer/
@@ -8,7 +8,7 @@
 
     var
         game_server = module.exports = { games : {}, game_count:0 },
-        UUID        = require('node-uuid'),
+        UUID        = require('uuid-v4'),
         verbose     = true;
 
         //Since we are sharing code with the browser, we
