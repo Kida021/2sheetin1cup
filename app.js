@@ -1,9 +1,10 @@
-/*  Copyright 2012-2016 Sven "underscorediscovery" Bergström
+/*  Copyright 2012-2016 Sven "underscorediscovery" BergstrÃ¶m
     
     written by : http://underscorediscovery.ca
     written for : http://buildnewgames.com/real-time-multiplayer/
     
     MIT Licensed.
+
     Usage : node app.js
 */
 
@@ -12,7 +13,7 @@
 
         io              = require('socket.io'),
         express         = require('express'),
-        UUID            = require('node-uuid'),
+        UUID            = require('uuid-v4'),
 
         verbose         = false,
         http            = require('http'),
